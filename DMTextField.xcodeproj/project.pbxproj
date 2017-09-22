@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70231DC31F74E77000BB9013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DC21F74E77000BB9013 /* main.m */; };
+		70231DC61F74E77000BB9013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DC51F74E77000BB9013 /* AppDelegate.m */; };
+		70231DC91F74E77000BB9013 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DC81F74E77000BB9013 /* ViewController.m */; };
+		70231DCC1F74E77000BB9013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70231DCA1F74E77000BB9013 /* Main.storyboard */; };
+		70231DCE1F74E77000BB9013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70231DCD1F74E77000BB9013 /* Assets.xcassets */; };
+		70231DD11F74E77000BB9013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70231DCF1F74E77000BB9013 /* LaunchScreen.storyboard */; };
+		70231DDC1F74E77000BB9013 /* DMTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DDB1F74E77000BB9013 /* DMTextFieldTests.m */; };
+		70231DE71F74E77000BB9013 /* DMTextFieldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DE61F74E77000BB9013 /* DMTextFieldUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70231DD81F74E77000BB9013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70231DB61F74E77000BB9013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70231DBD1F74E77000BB9013;
+			remoteInfo = DMTextField;
+		};
+		70231DE31F74E77000BB9013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70231DB61F74E77000BB9013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70231DBD1F74E77000BB9013;
+			remoteInfo = DMTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70231DBE1F74E77000BB9013 /* DMTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70231DC21F74E77000BB9013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70231DC41F74E77000BB9013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70231DC51F74E77000BB9013 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70231DC71F74E77000BB9013 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		70231DC81F74E77000BB9013 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70231DCB1F74E77000BB9013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70231DCD1F74E77000BB9013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70231DD01F74E77000BB9013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70231DD21F74E77000BB9013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70231DD71F74E77000BB9013 /* DMTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70231DDB1F74E77000BB9013 /* DMTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMTextFieldTests.m; sourceTree = "<group>"; };
+		70231DDD1F74E77000BB9013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70231DE21F74E77000BB9013 /* DMTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70231DE61F74E77000BB9013 /* DMTextFieldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMTextFieldUITests.m; sourceTree = "<group>"; };
+		70231DE81F74E77000BB9013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70231DBB1F74E77000BB9013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70231DD41F74E77000BB9013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70231DDF1F74E77000BB9013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70231DB51F74E77000BB9013 = {
+			isa = PBXGroup;
+			children = (
+				70231DC01F74E77000BB9013 /* DMTextField */,
+				70231DDA1F74E77000BB9013 /* DMTextFieldTests */,
+				70231DE51F74E77000BB9013 /* DMTextFieldUITests */,
+				70231DBF1F74E77000BB9013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70231DBF1F74E77000BB9013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70231DBE1F74E77000BB9013 /* DMTextField.app */,
+				70231DD71F74E77000BB9013 /* DMTextFieldTests.xctest */,
+				70231DE21F74E77000BB9013 /* DMTextFieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70231DC01F74E77000BB9013 /* DMTextField */ = {
+			isa = PBXGroup;
+			children = (
+				70231DC41F74E77000BB9013 /* AppDelegate.h */,
+				70231DC51F74E77000BB9013 /* AppDelegate.m */,
+				70231DC71F74E77000BB9013 /* ViewController.h */,
+				70231DC81F74E77000BB9013 /* ViewController.m */,
+				70231DCA1F74E77000BB9013 /* Main.storyboard */,
+				70231DCD1F74E77000BB9013 /* Assets.xcassets */,
+				70231DCF1F74E77000BB9013 /* LaunchScreen.storyboard */,
+				70231DD21F74E77000BB9013 /* Info.plist */,
+				70231DC11F74E77000BB9013 /* Supporting Files */,
+			);
+			path = DMTextField;
+			sourceTree = "<group>";
+		};
+		70231DC11F74E77000BB9013 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70231DC21F74E77000BB9013 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70231DDA1F74E77000BB9013 /* DMTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				70231DDB1F74E77000BB9013 /* DMTextFieldTests.m */,
+				70231DDD1F74E77000BB9013 /* Info.plist */,
+			);
+			path = DMTextFieldTests;
+			sourceTree = "<group>";
+		};
+		70231DE51F74E77000BB9013 /* DMTextFieldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70231DE61F74E77000BB9013 /* DMTextFieldUITests.m */,
+				70231DE81F74E77000BB9013 /* Info.plist */,
+			);
+			path = DMTextFieldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70231DBD1F74E77000BB9013 /* DMTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70231DEB1F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextField" */;
+			buildPhases = (
+				70231DBA1F74E77000BB9013 /* Sources */,
+				70231DBB1F74E77000BB9013 /* Frameworks */,
+				70231DBC1F74E77000BB9013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMTextField;
+			productName = DMTextField;
+			productReference = 70231DBE1F74E77000BB9013 /* DMTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70231DD61F74E77000BB9013 /* DMTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70231DEE1F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextFieldTests" */;
+			buildPhases = (
+				70231DD31F74E77000BB9013 /* Sources */,
+				70231DD41F74E77000BB9013 /* Frameworks */,
+				70231DD51F74E77000BB9013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70231DD91F74E77000BB9013 /* PBXTargetDependency */,
+			);
+			name = DMTextFieldTests;
+			productName = DMTextFieldTests;
+			productReference = 70231DD71F74E77000BB9013 /* DMTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70231DE11F74E77000BB9013 /* DMTextFieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70231DF11F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextFieldUITests" */;
+			buildPhases = (
+				70231DDE1F74E77000BB9013 /* Sources */,
+				70231DDF1F74E77000BB9013 /* Frameworks */,
+				70231DE01F74E77000BB9013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70231DE41F74E77000BB9013 /* PBXTargetDependency */,
+			);
+			name = DMTextFieldUITests;
+			productName = DMTextFieldUITests;
+			productReference = 70231DE21F74E77000BB9013 /* DMTextFieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70231DB61F74E77000BB9013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "郑军";
+				TargetAttributes = {
+					70231DBD1F74E77000BB9013 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3AHZ82SGX3;
+						ProvisioningStyle = Automatic;
+					};
+					70231DD61F74E77000BB9013 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3AHZ82SGX3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 70231DBD1F74E77000BB9013;
+					};
+					70231DE11F74E77000BB9013 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3AHZ82SGX3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 70231DBD1F74E77000BB9013;
+					};
+				};
+			};
+			buildConfigurationList = 70231DB91F74E77000BB9013 /* Build configuration list for PBXProject "DMTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70231DB51F74E77000BB9013;
+			productRefGroup = 70231DBF1F74E77000BB9013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70231DBD1F74E77000BB9013 /* DMTextField */,
+				70231DD61F74E77000BB9013 /* DMTextFieldTests */,
+				70231DE11F74E77000BB9013 /* DMTextFieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70231DBC1F74E77000BB9013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70231DD11F74E77000BB9013 /* LaunchScreen.storyboard in Resources */,
+				70231DCE1F74E77000BB9013 /* Assets.xcassets in Resources */,
+				70231DCC1F74E77000BB9013 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70231DD51F74E77000BB9013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70231DE01F74E77000BB9013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70231DBA1F74E77000BB9013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70231DC91F74E77000BB9013 /* ViewController.m in Sources */,
+				70231DC61F74E77000BB9013 /* AppDelegate.m in Sources */,
+				70231DC31F74E77000BB9013 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70231DD31F74E77000BB9013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70231DDC1F74E77000BB9013 /* DMTextFieldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70231DDE1F74E77000BB9013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70231DE71F74E77000BB9013 /* DMTextFieldUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70231DD91F74E77000BB9013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70231DBD1F74E77000BB9013 /* DMTextField */;
+			targetProxy = 70231DD81F74E77000BB9013 /* PBXContainerItemProxy */;
+		};
+		70231DE41F74E77000BB9013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70231DBD1F74E77000BB9013 /* DMTextField */;
+			targetProxy = 70231DE31F74E77000BB9013 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70231DCA1F74E77000BB9013 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70231DCB1F74E77000BB9013 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70231DCF1F74E77000BB9013 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70231DD01F74E77000BB9013 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70231DE91F74E77000BB9013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70231DEA1F74E77000BB9013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70231DEC1F74E77000BB9013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3AHZ82SGX3;
+				INFOPLIST_FILE = DMTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.loanAssistant.DMTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		70231DED1F74E77000BB9013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3AHZ82SGX3;
+				INFOPLIST_FILE = DMTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.loanAssistant.DMTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		70231DEF1F74E77000BB9013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3AHZ82SGX3;
+				INFOPLIST_FILE = DMTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.loanAssistant.DMTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMTextField.app/DMTextField";
+			};
+			name = Debug;
+		};
+		70231DF01F74E77000BB9013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3AHZ82SGX3;
+				INFOPLIST_FILE = DMTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.loanAssistant.DMTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMTextField.app/DMTextField";
+			};
+			name = Release;
+		};
+		70231DF21F74E77000BB9013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3AHZ82SGX3;
+				INFOPLIST_FILE = DMTextFieldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.loanAssistant.DMTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DMTextField;
+			};
+			name = Debug;
+		};
+		70231DF31F74E77000BB9013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3AHZ82SGX3;
+				INFOPLIST_FILE = DMTextFieldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.loanAssistant.DMTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DMTextField;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70231DB91F74E77000BB9013 /* Build configuration list for PBXProject "DMTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70231DE91F74E77000BB9013 /* Debug */,
+				70231DEA1F74E77000BB9013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70231DEB1F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70231DEC1F74E77000BB9013 /* Debug */,
+				70231DED1F74E77000BB9013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70231DEE1F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70231DEF1F74E77000BB9013 /* Debug */,
+				70231DF01F74E77000BB9013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70231DF11F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextFieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70231DF21F74E77000BB9013 /* Debug */,
+				70231DF31F74E77000BB9013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70231DB61F74E77000BB9013 /* Project object */;
+}
