@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		70231DC31F74E77000BB9013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DC21F74E77000BB9013 /* main.m */; };
 		70231DC61F74E77000BB9013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DC51F74E77000BB9013 /* AppDelegate.m */; };
-		70231DC91F74E77000BB9013 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DC81F74E77000BB9013 /* ViewController.m */; };
-		70231DCC1F74E77000BB9013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70231DCA1F74E77000BB9013 /* Main.storyboard */; };
 		70231DCE1F74E77000BB9013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70231DCD1F74E77000BB9013 /* Assets.xcassets */; };
 		70231DD11F74E77000BB9013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70231DCF1F74E77000BB9013 /* LaunchScreen.storyboard */; };
 		70231DDC1F74E77000BB9013 /* DMTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DDB1F74E77000BB9013 /* DMTextFieldTests.m */; };
 		70231DE71F74E77000BB9013 /* DMTextFieldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DE61F74E77000BB9013 /* DMTextFieldUITests.m */; };
+		70231DF71F74E7AC00BB9013 /* DMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DF61F74E7AC00BB9013 /* DMTextField.m */; };
+		70231DFA1F74E97800BB9013 /* DMAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DF91F74E97800BB9013 /* DMAccessoryView.m */; };
+		70231DFF1F75045800BB9013 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DFC1F75045800BB9013 /* FirstViewController.m */; };
+		70231E001F75045800BB9013 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DFE1F75045800BB9013 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,6 @@
 		70231DC21F74E77000BB9013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70231DC41F74E77000BB9013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70231DC51F74E77000BB9013 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		70231DC71F74E77000BB9013 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		70231DC81F74E77000BB9013 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		70231DCB1F74E77000BB9013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70231DCD1F74E77000BB9013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70231DD01F74E77000BB9013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70231DD21F74E77000BB9013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,14 @@
 		70231DE21F74E77000BB9013 /* DMTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70231DE61F74E77000BB9013 /* DMTextFieldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMTextFieldUITests.m; sourceTree = "<group>"; };
 		70231DE81F74E77000BB9013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70231DF51F74E7AC00BB9013 /* DMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTextField.h; sourceTree = "<group>"; };
+		70231DF61F74E7AC00BB9013 /* DMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTextField.m; sourceTree = "<group>"; };
+		70231DF81F74E97800BB9013 /* DMAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAccessoryView.h; sourceTree = "<group>"; };
+		70231DF91F74E97800BB9013 /* DMAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAccessoryView.m; sourceTree = "<group>"; };
+		70231DFB1F75045800BB9013 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		70231DFC1F75045800BB9013 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		70231DFD1F75045800BB9013 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		70231DFE1F75045800BB9013 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		70231DB51F74E77000BB9013 = {
 			isa = PBXGroup;
 			children = (
+				70231DF41F74E79600BB9013 /* Classes */,
 				70231DC01F74E77000BB9013 /* DMTextField */,
 				70231DDA1F74E77000BB9013 /* DMTextFieldTests */,
 				70231DE51F74E77000BB9013 /* DMTextFieldUITests */,
@@ -101,11 +109,12 @@
 		70231DC01F74E77000BB9013 /* DMTextField */ = {
 			isa = PBXGroup;
 			children = (
+				70231DFB1F75045800BB9013 /* FirstViewController.h */,
+				70231DFC1F75045800BB9013 /* FirstViewController.m */,
+				70231DFD1F75045800BB9013 /* SecondViewController.h */,
+				70231DFE1F75045800BB9013 /* SecondViewController.m */,
 				70231DC41F74E77000BB9013 /* AppDelegate.h */,
 				70231DC51F74E77000BB9013 /* AppDelegate.m */,
-				70231DC71F74E77000BB9013 /* ViewController.h */,
-				70231DC81F74E77000BB9013 /* ViewController.m */,
-				70231DCA1F74E77000BB9013 /* Main.storyboard */,
 				70231DCD1F74E77000BB9013 /* Assets.xcassets */,
 				70231DCF1F74E77000BB9013 /* LaunchScreen.storyboard */,
 				70231DD21F74E77000BB9013 /* Info.plist */,
@@ -138,6 +147,17 @@
 				70231DE81F74E77000BB9013 /* Info.plist */,
 			);
 			path = DMTextFieldUITests;
+			sourceTree = "<group>";
+		};
+		70231DF41F74E79600BB9013 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				70231DF51F74E7AC00BB9013 /* DMTextField.h */,
+				70231DF61F74E7AC00BB9013 /* DMTextField.m */,
+				70231DF81F74E97800BB9013 /* DMAccessoryView.h */,
+				70231DF91F74E97800BB9013 /* DMAccessoryView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +271,6 @@
 			files = (
 				70231DD11F74E77000BB9013 /* LaunchScreen.storyboard in Resources */,
 				70231DCE1F74E77000BB9013 /* Assets.xcassets in Resources */,
-				70231DCC1F74E77000BB9013 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70231DC91F74E77000BB9013 /* ViewController.m in Sources */,
+				70231E001F75045800BB9013 /* SecondViewController.m in Sources */,
+				70231DFA1F74E97800BB9013 /* DMAccessoryView.m in Sources */,
 				70231DC61F74E77000BB9013 /* AppDelegate.m in Sources */,
+				70231DFF1F75045800BB9013 /* FirstViewController.m in Sources */,
+				70231DF71F74E7AC00BB9013 /* DMTextField.m in Sources */,
 				70231DC31F74E77000BB9013 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,14 +336,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		70231DCA1F74E77000BB9013 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70231DCB1F74E77000BB9013 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		70231DCF1F74E77000BB9013 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
