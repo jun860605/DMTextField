@@ -113,7 +113,6 @@ typedef void (^TextMaxBlock)();
  */
 - (void)textFieldContentDidChanged:(NSNotification *)notif {
     if (_textMaxLenght != 0 && self.text.length > _textMaxLenght && self.markedTextRange == nil) {
-        NSLog(@"self.text.lenght is %ld \n self.text is %@",self.text.length,self.text) ;
         if (self.maxBlock) {
             self.maxBlock() ;
         }
