@@ -38,7 +38,6 @@ typedef void (^TextMaxBlock)();
         [self addObserver:self forKeyPath:@"text" options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew) context:nil];
         DMAccessoryView *accessoryView = [[DMAccessoryView alloc] initWithDelegate:self] ;
         self.inputAccessoryView = accessoryView ;
-        //默认设置
         self.font = [UIFont systemFontOfSize:14] ;
         self.textMaxLenght = NSIntegerMax ;
         //默认不能输入emoj表情
@@ -70,6 +69,10 @@ typedef void (^TextMaxBlock)();
     self.maxBlock = maxBlock ;
 }
 
+static SEL extracted() {
+    return @selector(textFieldContentDidChanged:);
+}
+
 /**
  * 调起键盘时的回调 ，成为第一响应者的回调方法
  */
@@ -78,7 +81,7 @@ typedef void (^TextMaxBlock)();
         self.defaultStr = self.text ;
     }
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(textFieldContentDidChanged:)
+                                             selector:extracted()
                                                  name:UITextFieldTextDidChangeNotification
                                                object:nil] ;
     return [super becomeFirstResponder] ;

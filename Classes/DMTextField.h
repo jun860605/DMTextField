@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @interface DMTextField : UITextField
 //最大输入长度
 @property (nonatomic, assign) NSInteger textMaxLenght ;

@@ -17,6 +17,10 @@
 		70231DFA1F74E97800BB9013 /* DMAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DF91F74E97800BB9013 /* DMAccessoryView.m */; };
 		70231DFF1F75045800BB9013 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DFC1F75045800BB9013 /* FirstViewController.m */; };
 		70231E001F75045800BB9013 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70231DFE1F75045800BB9013 /* SecondViewController.m */; };
+		7048B4A21F78CD9D006F58E4 /* DMTextFieldUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7048B4A11F78CD9D006F58E4 /* DMTextFieldUnit.m */; };
+		7048B4A41F78D287006F58E4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7048B4A31F78D287006F58E4 /* Podfile */; };
+		7048B4A71F78F444006F58E4 /* DMAdaptionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7048B4A61F78F444006F58E4 /* DMAdaptionLabel.m */; };
+		B7FAC624D5133D5E4CC6187F /* libPods-DMTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C915D93CCB1F8575AB9206 /* libPods-DMTextField.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FD126FB2E45E916FB30925B /* Pods-DMTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMTextField/Pods-DMTextField.debug.xcconfig"; sourceTree = "<group>"; };
+		54C915D93CCB1F8575AB9206 /* libPods-DMTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMTextField.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70231DBE1F74E77000BB9013 /* DMTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70231DC21F74E77000BB9013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70231DC41F74E77000BB9013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +64,12 @@
 		70231DFC1F75045800BB9013 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		70231DFD1F75045800BB9013 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		70231DFE1F75045800BB9013 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7048B4A01F78CD9D006F58E4 /* DMTextFieldUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMTextFieldUnit.h; sourceTree = "<group>"; };
+		7048B4A11F78CD9D006F58E4 /* DMTextFieldUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMTextFieldUnit.m; sourceTree = "<group>"; };
+		7048B4A31F78D287006F58E4 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7048B4A51F78F444006F58E4 /* DMAdaptionLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAdaptionLabel.h; sourceTree = "<group>"; };
+		7048B4A61F78F444006F58E4 /* DMAdaptionLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAdaptionLabel.m; sourceTree = "<group>"; };
+		A32813A4731CFCFBB7A27BFB /* Pods-DMTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMTextField/Pods-DMTextField.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7FAC624D5133D5E4CC6187F /* libPods-DMTextField.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,14 +98,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23F1FA984C3C074EE8171015 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FD126FB2E45E916FB30925B /* Pods-DMTextField.debug.xcconfig */,
+				A32813A4731CFCFBB7A27BFB /* Pods-DMTextField.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57CBE9E27A624B89FEC55B0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54C915D93CCB1F8575AB9206 /* libPods-DMTextField.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70231DB51F74E77000BB9013 = {
 			isa = PBXGroup;
 			children = (
+				7048B4A31F78D287006F58E4 /* Podfile */,
 				70231DF41F74E79600BB9013 /* Classes */,
 				70231DC01F74E77000BB9013 /* DMTextField */,
 				70231DDA1F74E77000BB9013 /* DMTextFieldTests */,
 				70231DE51F74E77000BB9013 /* DMTextFieldUITests */,
 				70231DBF1F74E77000BB9013 /* Products */,
+				23F1FA984C3C074EE8171015 /* Pods */,
+				57CBE9E27A624B89FEC55B0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +187,10 @@
 			children = (
 				70231DF51F74E7AC00BB9013 /* DMTextField.h */,
 				70231DF61F74E7AC00BB9013 /* DMTextField.m */,
+				7048B4A01F78CD9D006F58E4 /* DMTextFieldUnit.h */,
+				7048B4A11F78CD9D006F58E4 /* DMTextFieldUnit.m */,
+				7048B4A51F78F444006F58E4 /* DMAdaptionLabel.h */,
+				7048B4A61F78F444006F58E4 /* DMAdaptionLabel.m */,
 				70231DF81F74E97800BB9013 /* DMAccessoryView.h */,
 				70231DF91F74E97800BB9013 /* DMAccessoryView.m */,
 			);
@@ -167,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70231DEB1F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextField" */;
 			buildPhases = (
+				4E43CC7D99403348872419BD /* [CP] Check Pods Manifest.lock */,
 				70231DBA1F74E77000BB9013 /* Sources */,
 				70231DBB1F74E77000BB9013 /* Frameworks */,
 				70231DBC1F74E77000BB9013 /* Resources */,
+				CB50B9D2E550CA7FD7DE3B4D /* [CP] Embed Pods Frameworks */,
+				CF7E0450FFCA00C7CC63BD3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7048B4A41F78D287006F58E4 /* Podfile in Resources */,
 				70231DD11F74E77000BB9013 /* LaunchScreen.storyboard in Resources */,
 				70231DCE1F74E77000BB9013 /* Assets.xcassets in Resources */,
 			);
@@ -290,15 +331,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E43CC7D99403348872419BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DMTextField-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB50B9D2E550CA7FD7DE3B4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMTextField/Pods-DMTextField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7E0450FFCA00C7CC63BD3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMTextField/Pods-DMTextField-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70231DBA1F74E77000BB9013 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				70231E001F75045800BB9013 /* SecondViewController.m in Sources */,
+				7048B4A21F78CD9D006F58E4 /* DMTextFieldUnit.m in Sources */,
 				70231DFA1F74E97800BB9013 /* DMAccessoryView.m in Sources */,
 				70231DC61F74E77000BB9013 /* AppDelegate.m in Sources */,
 				70231DFF1F75045800BB9013 /* FirstViewController.m in Sources */,
+				7048B4A71F78F444006F58E4 /* DMAdaptionLabel.m in Sources */,
 				70231DF71F74E7AC00BB9013 /* DMTextField.m in Sources */,
 				70231DC31F74E77000BB9013 /* main.m in Sources */,
 			);
@@ -439,6 +533,7 @@
 		};
 		70231DEC1F74E77000BB9013 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD126FB2E45E916FB30925B /* Pods-DMTextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3AHZ82SGX3;
@@ -451,6 +546,7 @@
 		};
 		70231DED1F74E77000BB9013 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A32813A4731CFCFBB7A27BFB /* Pods-DMTextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3AHZ82SGX3;
@@ -530,6 +626,7 @@
 				70231DED1F74E77000BB9013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70231DEE1F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +635,7 @@
 				70231DF01F74E77000BB9013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70231DF11F74E77000BB9013 /* Build configuration list for PBXNativeTarget "DMTextFieldUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +644,7 @@
 				70231DF31F74E77000BB9013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

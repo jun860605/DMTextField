@@ -9,8 +9,10 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "DMTextField.h"
-@interface FirstViewController ()
-
+#import "DMTextFieldUnit.h"
+@interface FirstViewController () {
+    DMTextFieldUnit *_textUnit ;
+}
 @end
 
 @implementation FirstViewController
@@ -19,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"第一级视图" ;
-    self.view.backgroundColor = [UIColor colorWithRed:90/255.0 green:90/255.0 blue:90/255.0 alpha:1.0] ;
+    self.view.backgroundColor = [UIColor whiteColor] ;
     DMTextField *testField = ({
         DMTextField *field = [[DMTextField alloc] initWithFrame:CGRectMake(30, 100, 200, 40)] ;
         field.placeholder = @"测试输入文字" ;
@@ -47,10 +49,17 @@
         btn ;
     }) ;
     [self.view addSubview:button] ;
+    
+    DMTextFieldUnit *textUnit = [[DMTextFieldUnit alloc] initWithFrame:CGRectMake(40, 240, 200, 40) unit:@"万"] ;
+    textUnit.backgroundColor = [UIColor greenColor] ;
+//    textUnit.unit = @"的方法" ;
+    [self.view addSubview:textUnit];
+    _textUnit = textUnit ;
 }
 
 - (void)testTheKeyBoard {
     NSLog(@"test!!") ;
+    NSLog(@"%@",_textUnit.text) ;
     SecondViewController *secondCtr = [[SecondViewController alloc] init];
     [self.navigationController pushViewController:secondCtr animated:YES] ;
 }
