@@ -15,6 +15,6 @@
 //是否需要禁掉emoj表情
 @property (nonatomic , assign) BOOL emojEnabled ;
 //输入框内容
-@property (nonatomic , copy) NSString *text ;
+@property (nonatomic , copy ,getter=getMyText) NSString *text ;
 - (instancetype)initWithFrame:(CGRect)frame unit:(NSString *)unit ;
 @end

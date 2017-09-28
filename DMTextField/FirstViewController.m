@@ -59,7 +59,7 @@
 
 - (void)testTheKeyBoard {
     NSLog(@"test!!") ;
-    NSLog(@"%@",_textUnit.text) ;
+//    NSLog(@"%@",_textUnit.text) ;
     SecondViewController *secondCtr = [[SecondViewController alloc] init];
     [self.navigationController pushViewController:secondCtr animated:YES] ;
 }
