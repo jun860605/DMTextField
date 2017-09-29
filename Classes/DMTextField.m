@@ -135,6 +135,7 @@ static SEL extracted() {
     NSArray *subViews = [UIApplication sharedApplication].keyWindow.subviews ;
     if (subViews.count > 0) {
         [subViews enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+             UIView *currentView = obj ;
             if ([obj isKindOfClass:[UIPickerView class]]) {
                 UIView *tempView = obj ;
                 [UIView animateWithDuration:0.25 animations:^{
@@ -142,6 +143,10 @@ static SEL extracted() {
                 }completion:^(BOOL finished) {
                     [tempView removeFromSuperview] ;
                 }] ;
+            }
+            //主要针对DMBasePickView
+            if ([currentView respondsToSelector:@selector(removeThePickView)]) {
+                [currentView performSelector:@selector(removeThePickView) withObject:nil afterDelay:0] ;
             }
         }] ;
     }
