@@ -152,6 +152,9 @@ static SEL extracted() {
     }
 }
 
+- (void)removeThePickView {
+    
+}
 /**
  * 结束编辑时的回调 （跟点击确认时的回调一样）
  */
