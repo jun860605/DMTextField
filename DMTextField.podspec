@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DMTextField"
-  s.version      = "0.0.6"
+  s.version      = "1.0.0"
   s.summary      = "A textfield for daima"
   s.description  = <<-DESC
                         A textfield that contain cancle button and done button
