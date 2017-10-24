@@ -14,8 +14,14 @@ typedef void (^TextChangeBlock)(DMTextField *textField) ;
 typedef void (^TextConfirmBlock)(DMTextField *textField);
 //textfield超出最大限制时的回调
 typedef void (^TextMaxBlock)();
-@interface DMTextField() <DMTextFieldDelegate ,DMAccessoryViewDelegate>
+@interface DMTextField() <DMTextFieldDelegate ,DMAccessoryViewDelegate> {
+    float _currentY ;
+    //ctr对应的view
+    UIScrollView *_scrollView ;
+}
 //成为第一响应者时的默认数据
+@property (nonatomic , strong) UIView *baseView ;
+@property (nonatomic , assign) CGRect  baseViewFrame ;
 @property (nonatomic , copy) NSString * defaultStr ;
 @property (nonatomic , strong) TextChangeBlock changeBlock ;
 @property (nonatomic , strong) TextConfirmBlock confirmBlock ;
@@ -46,6 +52,70 @@ typedef void (^TextMaxBlock)();
         self.delegate = self ;
     }
     return self ;
+}
+
+
+/**
+ 键盘出现的回调方法
+
+ @param notification 通知
+ */
+- (void)_keyboardWillShow:(NSNotification *)notification{
+    //先计算键盘高度
+    NSDictionary *userInfo = [notification userInfo];
+    NSValue *aValue = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGRect keyboardRect = [aValue CGRectValue];
+    _currentY = 0 ;
+    float currentY = [self getCurrentY:self] ;
+    NSLog(@"%f",self.frame.size.height) ;
+    if (currentY + self.frame.size.height > keyboardRect.origin.y) {
+        //遮挡
+        float distance = currentY + self.frame.size.height - keyboardRect.origin.y ;
+        [UIView animateWithDuration:0.5 animations:^{
+            CGRect windowFrame = _baseView.frame ;
+            windowFrame.origin.y -= distance ;
+            _baseView.frame = windowFrame ;
+        }] ;
+        
+        if (currentY + self.frame.size.height > [UIScreen mainScreen].bounds.size.height && _scrollView) {
+            float contentY = currentY + self.frame.size.height - [UIScreen mainScreen].bounds.size.height ;
+            CGPoint oldPoint = _scrollView.contentOffset ;
+            oldPoint.y += contentY ;
+            [_scrollView setContentOffset:oldPoint] ;
+        }
+    }
+}
+
+- (float)getCurrentY:(UIView *)view {
+    if ([view isKindOfClass:[UIScrollView class]]) {
+        UIScrollView *scrollView = (UIScrollView *)view ;
+        _currentY = _currentY + view.frame.origin.y - scrollView.contentOffset.y ;
+        _scrollView = scrollView ;
+    }else {
+        _currentY += view.frame.origin.y ;
+    }
+    UIView *superView = view.superview ;
+    if ([superView isKindOfClass:[UIWindow class]]) {
+        _baseView = view ;
+        _baseViewFrame = view.frame ;
+        return _currentY ;
+    }else {
+        [self getCurrentY:superView] ;
+    }
+    return _currentY ;
+}
+
+/**
+ 恢复视图的大小
+ */
+- (void)_keyboardWillHide{
+    [UIView animateWithDuration:0.3 animations:^{
+         self.baseView.frame = self.baseViewFrame ;
+    }] ;
+}
+
+- (void)_keyboardDidHide {
+//    self.keyboardIsVisble = NO ;
 }
 
 /**
@@ -81,6 +151,16 @@ static SEL extracted() {
         self.defaultStr = self.text ;
     }
     [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(_keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(_keyboardWillHide)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:extracted()
                                                  name:UITextFieldTextDidChangeNotification
                                                object:nil] ;
@@ -95,6 +175,16 @@ static SEL extracted() {
     if (_defaultStr) {
         _defaultStr = nil ;
     }
+    [UIView animateWithDuration:0.3 animations:^{
+        self.baseView.frame = self.baseViewFrame ;
+    }] ;
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIKeyboardWillShowNotification
+                                                  object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIKeyboardWillHideNotification
+                                                  object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UITextFieldTextDidChangeNotification
                                                   object:nil] ;

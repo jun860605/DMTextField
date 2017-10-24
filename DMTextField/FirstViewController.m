@@ -55,6 +55,11 @@
 //    textUnit.unit = @"的方法" ;
     [self.view addSubview:textUnit];
     _textUnit = textUnit ;
+
+    DMTextFieldUnit *textUnit1 = [[DMTextFieldUnit alloc] initWithFrame:CGRectMake(40, 540, 200, 40) unit:@"万"] ;
+    textUnit1.backgroundColor = [UIColor greenColor] ;
+    //    textUnit.unit = @"的方法" ;
+    [self.view addSubview:textUnit1];
 }
 
 - (void)testTheKeyBoard {
