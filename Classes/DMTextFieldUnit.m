@@ -7,13 +7,11 @@
 //
 
 #import "DMTextFieldUnit.h"
-#import "DMTextField.h"
 #import "Masonry.h"
 #import "DMAdaptionLabel.h"
 @interface DMTextFieldUnit() {
     UILabel *_unitLabel ;
 }
-@property (nonatomic , strong) DMTextField *textField ;
 @end
 
 @implementation DMTextFieldUnit

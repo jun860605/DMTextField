@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DMTextField.h"
 @interface DMTextFieldUnit : UIView
 //单位
 @property (nonatomic , copy) NSString *unit ;
@@ -16,5 +17,6 @@
 @property (nonatomic , assign) BOOL emojEnabled ;
 //输入框内容
 @property (nonatomic , copy ,getter=getMyText) NSString *text ;
+@property (nonatomic , strong) DMTextField *textField ;
 - (instancetype)initWithFrame:(CGRect)frame unit:(NSString *)unit ;
 @end

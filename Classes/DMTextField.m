@@ -211,6 +211,9 @@ static SEL extracted() {
         }
         self.text = [self.text substringToIndex:_textMaxLenght] ;
     }
+    if (self.changeBlock) {
+        self.changeBlock(self) ;
+    }
 }
 
 #pragma mark - UITextFieldDelegate
